@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>SonacAlexCore</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CrystalReports.Engine" Version="13.0.4000" />
+    <PackageReference Include="CrystalReports.ReportSource" Version="13.0.4000" />
+    <PackageReference Include="CrystalReports.Shared" Version="13.0.4000" />
+    <PackageReference Include="CrystalReports.Windows.Forms" Version="13.0.4000" />
+    <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1003" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.Management" Version="5.0.0" />
+    <PackageReference Include="WiaDotNet" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sign">
+      <HintPath>..\..\SonacAlex\Sign.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
